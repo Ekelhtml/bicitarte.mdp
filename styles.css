@@ -1,3 +1,70 @@
-body{
-    background-color: black;
+:root{
+    /*--main-color: black;*/
+    --verde-logo: rgba(5, 255, 11, 1);
+    --violeta-base: rgba(69, 64, 123, 1);
+    --violeta-claro: rgba(80, 56, 166, 1);
+    --blanco-letra: rgba(255, 255, 255, 1);
+    /* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    */
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenedor nav{
+    background-color: var(--violeta-base);
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; */
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+    "logo menu menu";
+
+    color: var(--blanco-letra);
+
+}
+
+.contenedor nav .logo{
+    grid-area: logo;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenedor nav .menu{
+    grid-area: menu;
+}
+.contenedor nav .menu ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contenedor nav .menu ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;
+    justify-items: space-around;
+}
+.contenedor nav .menu ul li a{
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px;
+    margin: 5px;
+}
+a:link {
+    text-decoration: none;
+    color: var(--blanco-letra);
+}
+.contenedor nav .menu ul li a:hover{
+    background-color: var(--violeta-claro);
+}
+a:visited{
+    text-decoration: none;
+    color: var(--blanco-letra);
 }
