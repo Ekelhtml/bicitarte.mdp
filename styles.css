@@ -12,30 +12,72 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor .top{
+    width: 100%;
+    border-bottom: solid 1px white ;
+}
+.contenedor .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor .top div{
+    display: flex;
+}
+.contenedor .top div p{
+   padding: 10px 20px;
+}
+.contenedor .top .contacto {
+    border-left: solid 1px white ;
+}
+.contenedor .top .contacto p{
+    border-left: solid 1px white ;
+}
+.contenedor .top .idiomasRedes .redes p{
+    border-left: solid 1px white ;
+
 }
 .contenedor nav{
-    background-color: var(--violeta-base);
-    /* display: flex;
-    flex-direction: row;
+    background-color: rgba(69, 64, 123, 0.8);
     align-items: center;
-    justify-content: space-between; */
-    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    color: var(--blanco-letra);
+}
+.contenedor .principal{
+    top: 40px;
     display: grid;
     grid-template-areas:
-    "logo menu menu";
-
-    color: var(--blanco-letra);
-
+    "logo menu menu menu tour";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
-
+.logo img{
+    width: 70px;
+}
 .contenedor nav .logo{
     grid-area: logo;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-style: italic;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.contenedor nav .tour{
+    grid-area: tour;
+    display: flex;
+    justify-content: center;
+}
+.contenedor nav .tour a{
+    background-color: var(--verde-logo);
+    padding: 7px 10px;
+    border-radius: 7px;
+    
 }
 .contenedor nav .menu{
     grid-area: menu;
@@ -43,17 +85,17 @@
 .contenedor nav .menu ul{
     display: flex;
     flex-direction: row;
+    list-style: none;
+    justify-content: center;
     
 }
 .contenedor nav .menu ul li{
-    list-style: none;
-    padding: 10px;
-    font-size: 1.2em;
-    justify-items: space-around;
+    padding: 5px;
+    /* font-size: 1.em; */
+    justify-items: end;
 }
 .contenedor nav .menu ul li a{
     cursor: pointer;
-    display: inline-block;
     padding: 20px;
     margin: 5px;
 }
@@ -67,4 +109,16 @@ a:link {
 a:visited{
     text-decoration: none;
     color: var(--blanco-letra);
+}
+
+main div{
+    height: 1500px;
+}
+nav.borrar{
+    display: none;
+    background-color: black;
+}
+nav.cambiar{
+    top:0;
+    background-color: black;
 }
