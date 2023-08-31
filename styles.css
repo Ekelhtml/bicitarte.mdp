@@ -15,39 +15,44 @@
     box-sizing: border-box;
 }
 
-.contenedor .top{
-    width: 100%;
+.contenedor header .top1{
+    
     border-bottom: solid 1px white ;
-}
-.contenedor .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.contenedor .top div{
+
+.contenedor header .top1 div{
     display: flex;
 }
-.contenedor .top div p{
+.contenedor header .top1 div p{
    padding: 10px 20px;
 }
-.contenedor .top .contacto {
+.contenedor header .top1 .idioma p{
+    padding: 10px 15px 10px 0px;
+}
+
+.contenedor header .top1 .contacto p{
     border-left: solid 1px white ;
 }
-.contenedor .top .contacto p{
-    border-left: solid 1px white ;
-}
-.contenedor .top .idiomasRedes .redes p{
+.contenedor header .top1 .idiomasRedes .redes p{
     border-left: solid 1px white ;
 
 }
+
+
 .contenedor nav{
-    background-color: rgba(69, 64, 123, 0.8);
+    background-color: rgba(69, 64, 123,0.9);
     align-items: center;
     width: 100%;
     position: fixed;
     z-index: 100;
     color: var(--blanco-letra);
+    transition: 0.7s;
+    visibility: visible;
 }
+
 .contenedor .principal{
     top: 40px;
     display: grid;
@@ -55,7 +60,10 @@
     "logo menu menu menu tour";
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    transition: 0.7s;
+    /* transition: 0.5s linear 0.1s; */
 }
+
 .logo img{
     width: 70px;
 }
@@ -91,7 +99,6 @@
 }
 .contenedor nav .menu ul li{
     padding: 5px;
-    /* font-size: 1.em; */
     justify-items: end;
 }
 .contenedor nav .menu ul li a{
@@ -114,11 +121,5 @@ a:visited{
 main div{
     height: 1500px;
 }
-nav.borrar{
-    display: none;
-    background-color: black;
-}
-nav.cambiar{
-    top:0;
-    background-color: black;
-}
+
+
