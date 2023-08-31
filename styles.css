@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #5038A6;
+    --secondaryColor: #05FF0B;
+    --tertiary: #45407B;
+    --quaternary: #FAFFF8;
+    --colorTextPrimary: #ffffff;
+    --fontPrimary: 'Montserrat', sans-serif;
+    --fontSecondary:
+        /*definir*/
+    ;
+    --fontSizeBase: 16px;
+    --lineHeightBase: 1.5;
+
+    /*Definir el resto segun necesidades, valores debajo solo sonreferenciales*/
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+}
+
+/*MENSAJE MOTIVACIONAL, eliminar luego*/
+
+h1 {
+    font-family: var(--fontPrimary);
+    font-weight: 900;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--secondaryColor);
+    background:var(--primaryColor);
+}
