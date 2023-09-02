@@ -11,9 +11,8 @@
     --quaternary: #FAFFF8;
     --colorTextPrimary: #ffffff;
     --fontPrimary: 'Montserrat', sans-serif;
-    --fontSecondary:
-        /*definir*/
-    ;
+    --fontSecondary:/*definir*/;
+    --opcional_color: #010101;
     --fontSizeBase: 16px;
     --lineHeightBase: 1.5;
 
@@ -55,7 +54,8 @@ hr{
     border: solid 2px var(--secondaryColor);
     
 }
- h1 {
+
+h1 {
     
     font-size: 3rem;
     color: var(--quaternary);
@@ -68,7 +68,7 @@ hr{
     
 
 }
- .button {
+.button {
     font-size: var(--fontSizeBase);
     display: inline-block;
     padding: 15px 35px;
@@ -86,7 +86,7 @@ hr{
 
 .button:hover {
     background-color: var(--secondaryColor);
-    color: var(--colorTextPrimary);
+    color: var(--opcional_color);
 }
 
 
@@ -100,6 +100,4 @@ hr{
     background-color: rgba(0, 0, 0, 0.1); /* Color y opacidad de la capa */
 }
 
-img{
-    width: auto ;
-}
+
