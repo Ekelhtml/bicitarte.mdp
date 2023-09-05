@@ -1,20 +1,27 @@
-:root{
-    /*--main-color: black;*/
-    --verde-logo: rgba(5, 255, 11, 1);
-    --violeta-base: rgba(69, 64, 123, 1);
-    --violeta-claro: rgba(80, 56, 166, 1);
-    --blanco-letra: rgba(255, 255, 255, 1);
-    /* 
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    */
-}
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --primaryColor: #5038a6;
+    --secondaryColor: #05FF0B;
+    --tertiary: #45407b;
+    --quaternary: #FAFFF8;
+    --colorTextPrimary: #ffffff;
+    --fontPrimary: 'Montserrat', sans-serif;
+    --fontSecondary:
+        /*definir*/
+    ;
+    --fontSizeBase: 16px;
+    --lineHeightBase: 1.5;
 
+    /*Definir el resto segun necesidades, valores debajo solo sonreferenciales*/
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+    
+}
 .contenedor header .top1{
     
     border-bottom: solid 1px white ;
@@ -38,30 +45,26 @@
 }
 .contenedor header .top1 .idiomasRedes .redes p{
     border-left: solid 1px white ;
-
 }
 
-
 .contenedor nav{
-    background-color: rgba(69, 64, 123,0.9);
+    background-color: var(--tertiary);
     align-items: center;
     width: 100%;
     position: fixed;
     z-index: 100;
-    color: var(--blanco-letra);
+    color: var(--colorTextPrimary);
     transition: 0.7s;
     visibility: visible;
 }
-
 .contenedor .principal{
     top: 40px;
     display: grid;
     grid-template-areas:
     "logo menu menu menu tour";
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontPrimary);
     font-weight: 400;
-    transition: 0.7s;
-    /* transition: 0.5s linear 0.1s; */
+    transition: 0.7s; 
 }
 
 .logo img{
@@ -82,7 +85,7 @@
     justify-content: center;
 }
 .contenedor nav .tour a{
-    background-color: var(--verde-logo);
+    background-color: var(--secondaryColor);
     padding: 7px 10px;
     border-radius: 7px;
     
@@ -108,14 +111,15 @@
 }
 a:link {
     text-decoration: none;
-    color: var(--blanco-letra);
+    color: var(--colorTextPrimary);
 }
 .contenedor nav .menu ul li a:hover{
-    background-color: var(--violeta-claro);
+    /* background-color: var(--tertiary); */
+    background-color: var(--primaryColor);
 }
 a:visited{
     text-decoration: none;
-    color: var(--blanco-letra);
+    color: var(--colorTextPrimary);
 }
 
 main div{
