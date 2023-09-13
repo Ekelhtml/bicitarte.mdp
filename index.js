@@ -18,3 +18,23 @@ window.addEventListener('scroll', function(){
         principal.style.backgroundColor = "rgba(69, 64, 123,.9)"
     }
 });
+const menu = document.querySelector('.menu-hamburguesa');
+botonAbrir = document.querySelector(".abrir-menu");
+botonCerrar = document.querySelector(".cerrar-menu");
+botonAbrir.addEventListener("click", function(){
+    // menu.style.display = "contents";
+    botonAbrir.style.display = "none";
+    botonCerrar.style.display = "block";
+    menu.classList.remove("desactivar");
+    menu.classList.add("activar");
+   
+    
+});
+
+botonCerrar.addEventListener("click", function(){
+    // menu.style.display = "none";
+    botonAbrir.style.display = "block";
+    botonCerrar.style.display = "none";
+    menu.classList.add("desactivar");
+    menu.classList.remove("activar");
+});
