@@ -78,8 +78,8 @@ form{
     background: var(--opcional_color);
     width: 90%;
     padding: 10px 0;
-    /* border-radius: 10px;
-    box-shadow: 0 0 6px 0 var(--secondaryColor); */
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 var;
     font-family: var(--fontPrimary);
 }
 
@@ -116,7 +116,7 @@ textarea:focus~label, textarea:valid~label{
     position: absolute;
     top: -14px;
     font-size: 12px;
-    color: #2196F3;
+    color: var(--secondaryColor);
 }
 label{
     color: var(--colorTextos);
