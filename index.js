@@ -38,3 +38,12 @@ botonCerrar.addEventListener("click", function(){
     menu.classList.add("desactivar");
     menu.classList.remove("activar");
 });
+
+addEventListener("resize", ()=>{
+    if(innerWidth > 750) {
+        botonAbrir.style.display = "none";
+    }
+    else{
+        botonAbrir.style.display = "block";
+    }
+});
