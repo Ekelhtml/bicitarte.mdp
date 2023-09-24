@@ -15,8 +15,11 @@
         /*definir*/
     ;
     --opcional_color: #010101;
-    --lineHeightBase: 1.5;
+    --lineHeightBase: 1.5rem;
+    --fontSizeClasica: 1.2rem;
     --fontSizeBase: 1.5rem;
+    --fontSizeBaseDos: 1.9rem;
+    --fontsizaBaseTres: 2.1rem;
     /*Definir el resto segun necesidades, valores debajo solo sonreferenciales*/
     --border-radius: 4px;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,25 +39,17 @@
     flex-direction: column;
     color: var(--colorTextPrimary);
     gap: 20px;
-
+  
 }
 
-.image_footer{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
 
-}
-
-.image_footer img {
+.image_footer .image_logo_footer {
     margin-top: 25px;
-    width: 80%;
-    margin-bottom: 10px;
+    width: 95%;
 }
 
-hr {
-    width:350px;
+.largo_hr  {
+    width: 380px;
     border: solid 2px var(--secondaryColor);
 }
 
@@ -66,22 +61,21 @@ hr {
 .paragraph_footer {
     font-family: var(--fontPrimary);
 }
-.paragraph{
-    margin-bottom: 20px;
-}
+
 
 a i {
-color: var(--secondaryColor);
-padding: 10px;
-font-size: 24px;
+    color: var(--secondaryColor);
+    padding: 10px;
+    font-size: 24px;
 }
 
-h2{
+h2 {
     text-align: center;
     margin: 10px 0;
     font-family: var(--fontPrimary);
 }
-form{
+
+form {
     background: var(--opcional_color);
     width: 90%;
     padding: 10px 0;
@@ -90,61 +84,68 @@ form{
     font-family: var(--fontPrimary);
 }
 
-.form{
+.form {
     width: 100%;
     margin: auto;
 }
 
-form .grupo{
+form .grupo {
     position: relative;
     margin: 45px;
 }
 
-input, textarea{
+input,
+textarea {
     background: none;
-    color:#c6c6c6;
+    color: #c6c6c6;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
-    border:none;
+    border: none;
     border-bottom: 1px solid var(--secondaryColor);
     resize: none;
     font-family: var(--fontPrimary);
 }
 
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
     outline: none;
-    color: rgb(94,93,93);
+    color: rgb(94, 93, 93);
 }
-input:focus~label, 
-input:valid~label, 
-textarea:focus~label, textarea:valid~label{
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
     position: absolute;
     top: -14px;
     font-size: 12px;
     color: var(--secondaryColor);
 }
-label{
+
+label {
     color: var(--colorTextos);
     font-size: 16px;
     position: absolute;
     left: 5px;
-    top:10px;
+    top: 10px;
     transition: 0.5s ease all;
     pointer-events: none;
 }
 
-input:focus~.barra::before, textarea:focus~.barra::before{
+input:focus~.barra::before,
+textarea:focus~.barra::before {
     width: 100%;
 }
 
-.barra{
+.barra {
     position: relative;
     display: block;
     width: 100%;
 }
-.barra::before{
+
+.barra::before {
     content: '';
     height: 2px;
     width: 0%;
@@ -155,143 +156,189 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     left: 0%;
 }
 
-button{
+.button_form {
     background: var(--primaryColor);
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--opcional_color), var(--secondaryColor));
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--opcional_color), var(--secondaryColor));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: block;
     width: 100px;
     height: 40px;
-    border:none;
-    color:#fff; 
-    border-radius: 4px;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
     font-size: 16px;
     margin: 10px auto;
     cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.button_form:hover {
+    background-color: var(--secondaryColor);
+    color: var(--opcional_color);
+}
+h5 {
+    text-align: center;
+    margin: 10px 0;
+    font-family: var(--fontPrimary);
+    font-size: 12px;
 }
 
 
-/* inicio  min-width:768px)-------------------------
-*/
-@media screen and (min-width:768px){
-    .background_footer {
-        background-color: var(--opcional_color);
-        width: 100%;
-        height: auto;
-    }
-    
+
+/* inicio  min-width:768px) -------------------------------------------*/
+@media screen and (min-width:768px) {
+
+ 
     .container_footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: var(--colorTextPrimary);
-        gap: 20px;
-    
+        position: relative;
     }
-    
-    img {
-        width: 40%;
-        margin-bottom: -15px;
-        margin-top: 30px;
+
+
+    .image_footer .image_logo_footer {
+        width: 110%;
+        margin: 0 auto;
+        font-size: clamp(2rem, 4vw, 3rem);
+        padding-top: 20px;
+
+    }
+
+    .largo_hr {
+        width: 900px;
+    }
+
+    .title_footer {
+        font-size: var(--fontSizeBase);
+    }
+
+    .paragraph_footer {
+        font-size: var(--fontSizeClasica);
+    }
+
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: var(--fontSizeClasica);
+    }
+
+
+    /* alineacion absoluta */
+
+    .align_left{
+        position: absolute;
+        top: 200px;
+        left: 40px;
+    }
+
+    .align_left_1{
+        position: absolute;
+        top: 240px;
+        left: 40px;
+    }
+    .align_left_3{
+        position: absolute;
+        top: 340px;
+        left: 40px;
+    }
+    .align_left_4{
+        position: absolute;
+        top: 400px;
+        left: 40px;
+    }
+    .align_right{
+        position: absolute;
+        right: 278px;
+        bottom: 160px;
+       
+    }
+    .align_right_1{
+        position: absolute;
+        right: 60px;
+        bottom: 100px;
+     
         
     }
-    
-    hr {
-        width:350px;
-        border: solid 2px var(--secondaryColor);
-    }
-    
-    .title_footer {
-        font-family: var(--fontPrimary);
-        margin-bottom: 10px;
-    }
-    
-    .paragraph_footer {
-        font-family: var(--fontPrimary);
-    }
-    .paragraph{
-        margin-bottom: 20px;
-    }
-    
+
+
     a i {
-    color: var(--secondaryColor);
-    padding: 10px;
-    font-size: 24px;
+        font-size: var(--fontSizeBaseDos);
     }
-    
-    h2{
-        text-align: center;
-        margin: 10px 0;
-        font-family: var(--fontPrimary);
+
+    h2 {
+        font-size: var(--fontSizeBase);
     }
-    form{
+
+    form {
         background: var(--opcional_color);
-        width: 90%;
+        width: 30%;
         padding: 10px 0;
         border-radius: 10px;
         box-shadow: 0 0 6px 0 var;
         font-family: var(--fontPrimary);
-    }
     
-    .form{
+    }
+
+    .form {
         width: 100%;
         margin: auto;
     }
-    
-    form .grupo{
+
+    form .grupo {
         position: relative;
-        margin: 45px;
+        margin: 30px;
     }
-    
-    input, textarea{
+
+    input,
+    textarea {
         background: none;
-        color:#c6c6c6;
-        font-size: 18px;
+        color: #c6c6c6;
+        font-size: 14px;
         padding: 10px 10px 10px 5px;
         display: block;
         width: 100%;
-        border:none;
+        border: none;
         border-bottom: 1px solid var(--secondaryColor);
         resize: none;
         font-family: var(--fontPrimary);
     }
-    
-    input:focus,textarea:focus{
+
+    input:focus,
+    textarea:focus {
         outline: none;
-        color: rgb(94,93,93);
+        color: rgb(94, 93, 93);
     }
-    input:focus~label, 
-    input:valid~label, 
-    textarea:focus~label, textarea:valid~label{
+
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label {
         position: absolute;
         top: -14px;
-        font-size: 12px;
+        font-size: 16px;
         color: var(--secondaryColor);
     }
-    label{
+
+    label {
         color: var(--colorTextos);
-        font-size: 16px;
+        font-size: var(--fontSizeClasica);
         position: absolute;
         left: 5px;
-        top:10px;
+        top: 10px;
         transition: 0.5s ease all;
         pointer-events: none;
     }
-    
-    input:focus~.barra::before, textarea:focus~.barra::before{
+
+    input:focus~.barra::before,
+    textarea:focus~.barra::before {
         width: 100%;
     }
-    
-    .barra{
+
+    .barra {
         position: relative;
         display: block;
         width: 100%;
     }
-    .barra::before{
+
+    .barra::before {
         content: '';
         height: 2px;
         width: 0%;
@@ -301,22 +348,34 @@ button{
         transition: 0.3s ease all;
         left: 0%;
     }
-    
-    button{
+
+    .button_form {
         background: var(--primaryColor);
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, var(--opcional_color), var(--secondaryColor));
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, var(--opcional_color), var(--secondaryColor));
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         display: block;
         width: 100px;
         height: 40px;
-        border:none;
-        color:#fff; 
-        border-radius: 4px;
+        border: none;
+        color: #fff;
+        border-radius: 30px;
         font-size: 16px;
         margin: 10px auto;
         cursor: pointer;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+
+    .button_form:hover {
+        background-color: var(--secondaryColor);
+        color: var(--opcional_color);
     }
+
+    h5 {
+        text-align: center;
+        margin: 10px 0;
+        font-family: var(--fontPrimary);
+        font-size: 14px;
+    }
+
 }
