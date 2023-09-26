@@ -63,10 +63,13 @@
 }
 
 
-a i {
+.icons_redes {
     color: var(--secondaryColor);
     padding: 10px;
-    font-size: 24px;
+    font-size: 28px;
+}
+.icons_redes:hover {
+    color: var(--primaryColor);
 }
 
 h2 {
@@ -214,10 +217,15 @@ h5 {
 /* inicio  min-width:768px) -------------------------------------------*/
 @media screen and (min-width:768px) {
 
- 
+    .background_footer {
+        background-color: var(--opcional_color);
+        width: 100%;
+        height: 100vh;
+    }
     .container_footer {
         position: relative;
-    }
+       
+}
 
 
     .image_footer .image_logo_footer {
@@ -282,13 +290,13 @@ h5 {
      
         
     }
-
-
-    a i {
-        font-size: var(--fontSizeBaseDos);
+    .icons_redes {
+        color: var(--secondaryColor);
+        padding: 10px;
+        font-size: 26px;font-size: var(--fontSizeBaseDos);
     }
 
-    h2 {
+       h2 {
         font-size: var(--fontSizeBase);
     }
 
@@ -396,11 +404,12 @@ h5 {
         color: var(--opcional_color);
     }
 
-    h5 {
+    .copy {
         text-align: center;
         margin: 10px 0;
         font-family: var(--fontPrimary);
         font-size: 14px;
+        margin-top: 30px;
     }
 
     /* incorporacion de WhatsApp */
