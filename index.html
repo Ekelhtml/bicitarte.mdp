@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bicitarte.mdp</title>
+    <script src="https://kit.fontawesome.com/2e18c6fdc4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Bicitarte.mdpFinal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="contenedor">
+       <header>
+             <!-- menu que se esconde -->
+            <nav class="top1">
+                <div class="contacto">
+                    <p><a href=""><i class="fa-brands fa-whatsapp"></i> </a></p>
+                    <p><a href=""><i class="fa-regular fa-envelope"></i></a></p>
+                </div>
+                <div class="idiomasRedes">
+                    <div class="idioma">
+                        <p><a href="#">ES</a></p>
+                        <p><a href="#">EN</a></p>
+                    </div>
+                    <div class="redes">
+                        <p><a href=""><i class="fa-brands fa-facebook-messenger"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-tiktok"></i></a></p>
+                    </div>
+                </div>
+            </nav>
+            <!-- menu fijo -->
+            <nav class="principal">
+                <div class="logo">
+                    <img src="assets/logo/biciarte-logo.png" alt="logo">
+                    <h1>bicitarte</h1>
+                </div>
+                
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Paseos</a></li>
+                        <li><a href="#">Calendarios y reservas</a></li>      
+                        <li><a href="#">Sobre nosotros</a></li>      
+                        <li><a href="#">Contacto</a></li>            
+                    </ul>
+                </div>
+                <button class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+                <div class="tour">
+                    <a href="#">paseos</a>
+                </div>
+            </nav>
+            <nav class="menu-hamburguesa">
+                <ul>
+                    <li><button class="cerrar-menu"><i class="fa-solid fa-bars"></i></button></li>      
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Paseos</a></li>
+                    <li><a href="#">Calendarios y reservas</a></li>      
+                    <li><a href="#">Sobre nosotros</a></li>      
+                    <li><a href="#">Contacto</a></li>      
+                </ul>
+            </nav>
+        </header>
+ 
     <main>
         <div class="background_hero">
             <div class="overlay"></div>
@@ -133,5 +187,6 @@
           </div>
       </div>
     </section>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
