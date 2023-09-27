@@ -66,7 +66,6 @@
     top: 40px;
     display: flex;
     justify-content: space-between;
-
     font-family: var(--fontPrimary);
     font-weight: 400;
     transition: 0.7s; 
@@ -76,7 +75,6 @@
     max-width: 4rem;
 }
 .contenedor nav .logo{
-    
     font-weight: 900;
     font-style: italic;
     display: flex;
@@ -85,7 +83,6 @@
 }
 
 .contenedor nav .tour{
-  
     display: flex;
     justify-content: center;
 }
@@ -93,14 +90,12 @@
     background-color: var(--secondaryColor);
     padding: 7px 10px;
     border-radius: 7px;
-    
 }
 
 .contenedor nav .menu ul{
     display: flex;
     list-style: none;
     justify-content: center;
-    
 }
 .contenedor nav .menu ul li{
     padding: 5px;
