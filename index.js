@@ -15,7 +15,7 @@ window.addEventListener('scroll', function(){
     }else{
         top1.style.display = 'flex';
         principal.style.top = '40px';
-        principal.style.backgroundColor = "rgba(69, 64, 123,.9)"
+        principal.style.backgroundColor = "rgba(69, 64, 123,1)"
     }
 });
 const menu = document.querySelector('.menu-hamburguesa');

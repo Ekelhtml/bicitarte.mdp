@@ -22,15 +22,17 @@
     --transition-duration: 0.3s;
     
 }
+.menu ul li a{
+    /* hace que no se rompa el menu */
+    white-space: nowrap;
+}
 .contenedor .tour{
     margin-right: 1.5rem;
 }
 .contenedor .logo {
     margin-left: 0.5rem;
 }
-.contenedor header{
-    /* font-size:clamp(0.2rem, 2vw, 1rem); */
-}
+
 .contenedor header .top1{
     
     border-bottom: solid 1px white ;
@@ -63,7 +65,7 @@
     position: fixed;
     z-index: 100;
     color: var(--colorTextPrimary);
-    transition: 0.7s;
+    /* transition: 1.7s; */
     visibility: visible;
 }
 .contenedor .principal{
@@ -73,7 +75,8 @@
 
     font-family: var(--fontPrimary);
     font-weight: 400;
-    transition: 0.7s; 
+    /* Aca esta la lentitud de la transision pase 0.7 a 1.2 */
+    transition: 1.2s; 
 }
 
 .logo img{
@@ -166,6 +169,19 @@ main div{
     .menu-hamburguesa ul li{
         padding: 1rem;
         font-size: 2rem;
+    }
+    .cerrar-menu{
+        background-color: #45407b;
+        border: none;
+        color: white;
+        margin-left: auto ;
+    }
+
+    .abrir-menu{
+        background-color: #45407b;
+        border: none;
+        color: white;
+        margin-left: auto ;
     }
 
     .activar{
