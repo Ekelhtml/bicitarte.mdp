@@ -1147,3 +1147,37 @@ textarea:focus~.barra::before {
 } 
 
 }
+/* Seccion sobre Nosotros */
+.sobrenosotros{
+    background-color: var(--primaryColor);
+    font-family: var(--fontPrimary);
+    text-align: center;
+    justify-content: center;
+}
+.sobrenosotros h2{
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: #ffffff;
+        text-align: center;
+        opacity: 0.95;
+        text-transform:uppercase;
+}
+.sobrenosotros p{
+    width: 60vw;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.95;
+}
+.sobrenosotros .largo_hr{
+   margin: 0 auto;
+   opacity: 0.4;
+}
+#videoSobreNosotros{
+   margin: 2rem;
+
+}
