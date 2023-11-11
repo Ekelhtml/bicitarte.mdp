@@ -24,11 +24,12 @@
 
 /*MENSAJE MOTIVACIONAL, eliminar luego*/
 
-h1 {
+h2 {
   font-family: var(--fontPrimary);
   font-weight: 900;
   padding: 5px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: var(--secondaryColor);
@@ -77,6 +78,7 @@ h1 {
   gap: 24px;
   align-items: center;
   justify-content: center;
+  
 }
 
 .paseos__card {
@@ -87,7 +89,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   position: relative;
+  
 }
+
 
 .paseos__card-bg {
   background-color: rgba(0, 0, 0, 0.5);
@@ -155,6 +159,81 @@ h1 {
   right: 16px;
   text-decoration: none;
 }
+/*-------------------------------------- preguntas frecuentes*/
+
+.paseos {
+  background-color: var(--primaryColor);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fontPrimary);
+  padding: 50px;
+}
+
+.paseos__title {
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.paseos__title span {
+  color: var(--secondaryColor);
+}
+
+.paseos__text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.paseo__text__1 {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.paseos__text span {
+  color: var(--secondaryColor);
+}
+
+.image_1 {
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: contain;
+}
+
+.cont_imgage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.image_2,
+.image_3,
+.image_4 {
+  aspect-ratio: 16 / 9;
+  width: 80vw;
+  object-fit: cover;
+
+}
+.image_2_Lagos,
+.image_3_Lagos,
+.image_4_Lagos {
+  aspect-ratio: 2 / 3;
+  width: 80vw;
+  object-fit: cover;
+
+}
+
+
+/* fin preguntas frecuentes*/
+
 
 @media screen and (max-width: 768px) {
   #paseos__title {
@@ -172,8 +251,8 @@ h1 {
   }
   .paseos__card {
     aspect-ratio: 4 / 3;
-    max-width: 350px;
-    width: 90%;
+    max-width: 380px;
+    width: 100%;
   }
 
   .paseos__card-button {
