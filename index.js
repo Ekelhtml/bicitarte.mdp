@@ -18,6 +18,7 @@ window.addEventListener('scroll', function(){
         principal.style.backgroundColor = "rgba(69, 64, 123,1)"
     }
 });
+const menuLinks = document.querySelectorAll('.menu-hamburguesa a');
 const menu = document.querySelector('.menu-hamburguesa');
 botonAbrir = document.querySelector(".abrir-menu");
 botonCerrar = document.querySelector(".cerrar-menu");
@@ -27,6 +28,14 @@ botonAbrir.addEventListener("click", function(){
     botonCerrar.style.display = "block";
     menu.classList.remove("desactivar");
     menu.classList.add("activar");
+
+    menuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Cierra el menú al hacer clic en un enlace
+            menu.classList.remove('activar');
+            botonAbrir.style.display = "block";
+        });
+    });
    
     
 });
