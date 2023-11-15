@@ -158,6 +158,7 @@ main div{
     .menu-hamburguesa{
         display: none;
         padding: 1rem;
+        font-family: var(--fontPrimary);
     }
     .menu-hamburguesa ul{
         height: 90vh;
@@ -182,7 +183,7 @@ main div{
     }
 
     .activar{
-        display:block;
+        display:block; 
     }
     .desactivar{
         display: none;
