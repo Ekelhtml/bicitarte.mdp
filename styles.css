@@ -751,7 +751,6 @@ hr {
     flex-direction: column;
     color: var(--colorTextPrimary);
     gap: 20px;
-
 }
 
 
@@ -774,10 +773,9 @@ hr {
     font-family: var(--fontPrimary);
 }
 
-
 .icons_redes {
     color: var(--secondaryColor);
- padding: 5px;
+    padding: 5px;
     font-size: 28px;
 }
 
@@ -794,7 +792,6 @@ h2 {
 form {
     background: var(--opcional_color);
     width: 80%;
-    
     border-radius: 10px;
     box-shadow: 0 0 6px 0 var;
     font-family: var(--fontPrimary);
@@ -903,8 +900,6 @@ textarea:focus~.barra::before {
 }
 
 
-
-
 /* incorporacion de WhatsApp */
 
 .float {
@@ -932,220 +927,224 @@ textarea:focus~.barra::before {
     color: var(--secondaryColor);
     background-color: #fff;
 }
+/* Termino whatsApp) -------------------------------------------*/
+
 
 /* inicio  min-width:768px) -------------------------------------------*/
 
 @media screen and (min-width:768px) {
-.background_footer {
-    background-color: var(--opcional_color);
-    width: 100%;
-    height: 100vh;
-}
+    .background_footer {
+        background-color: var(--opcional_color);
+        width: 100%;
+        height: 
+        auto;
+    }
 
-.container_footer {
-    position: relative;
+    .container_footer {
+        position: relative;
 
-}
+    }
 
+    .image_footer .image_logo_footer {
+        width: 110%;
+        margin: 0 auto;
+        font-size: clamp(2rem, 4vw, 3rem);
+        padding-top: 20px;
 
-.image_footer .image_logo_footer {
-    width: 110%;
-    margin: 0 auto;
-    font-size: clamp(2rem, 4vw, 3rem);
-    padding-top: 20px;
+    }
 
-}
+    .largo_hr {
+        width: 700px;
+        
+    }
 
-.largo_hr {
-    width: 900px;
-}
+    .title_footer {
+        font-size: var(--fontSizeBase);
+    }
 
-.title_footer {
-    font-size: var(--fontSizeBase);
-}
+    .paragraph_footer {
+        font-size: var(--fontSizeClasica);
+    }
 
-.paragraph_footer {
-    font-size: var(--fontSizeClasica);
-}
-
-.paragraph {
-    margin-bottom: 20px;
-    font-size: var(--fontSizeClasica);
-}
-
-
-/* alineacion absoluta */
-
-.align_left {
-    position: absolute;
-    top: 200px;
-    left: 40px;
-}
-
-.align_left_1 {
-    position: absolute;
-    top: 240px;
-    left: 40px;
-}
-
-.align_left_3 {
-    position: absolute;
-    top: 340px;
-    left: 40px;
-}
-
-.align_left_4 {
-    position: absolute;
-    top: 400px;
-    left: 40px;
-}
-
-.align_right {
-    position: absolute;
-    right: 278px;
-    bottom: 160px;
-
-}
-
-.align_right_1 {
-    position: absolute;
-    right: 60px;
-    bottom: 100px;
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: var(--fontSizeClasica);
+    }
 
 
-}
+    /* alineacion absoluta */
 
-.icons_redes {
-    color: var(--secondaryColor);
-    padding: 10px;
-    font-size: 26px;
-    font-size: var(--fontSizeBaseDos);
-}
+    .align_left {
+        position: absolute;
+        top: 200px;
+        left: 40px;
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
 
-h2 {
-    font-size: var(--fontSizeBase);
-}
+    .align_left_1 {
+        position: absolute;
+        top: 240px;
+        left: 40px;
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
 
-form {
-    background: var(--opcional_color);
-    width: 30%;
-    padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 6px 0 var;
-    font-family: var(--fontPrimary);
+    .align_left_3 {
+        position: absolute;
+        top: 340px;
+        left: 40px;
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
 
-}
+    .align_left_4 {
+        position: absolute;
+        top: 400px;
+        left: 40px;
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
 
-.form {
-    width: 100%;
-    margin: auto;
-}
+    .align_right {
+        position: absolute;
+        right: 60px;
+        bottom: 160px;
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
 
-form .grupo {
-    position: relative;
-    margin: 30px;
-}
+    .align_right_1 {
+        position: absolute;
+        right: 60px;
+        bottom: 100px;
+        font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    }
 
-input,
-textarea {
-    background: none;
-    color: #c6c6c6;
-    font-size: 14px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--secondaryColor);
-    resize: none;
-    font-family: var(--fontPrimary);
-}
+    .icons_redes {
+        color: var(--secondaryColor);
+        padding: 10px;
+        font-size: 26px;
+        font-size: var(--fontSizeBaseDos);
+    }
 
-input:focus,
-textarea:focus {
-    outline: none;
-    color: rgb(94, 93, 93);
-}
+    h2 {
+        font-size: var(--fontSizeBase);
+    }
 
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label {
-    position: absolute;
-    top: -14px;
-    font-size: 16px;
-    color: var(--secondaryColor);
-}
+    form {
+        background: var(--opcional_color);
+        width: 40%;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 var;
+        font-family: var(--fontPrimary);
+    }
 
-label {
-    color: var(--colorTextos);
-    font-size: var(--fontSizeClasica);
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    transition: 0.5s ease all;
-    pointer-events: none;
-}
+    .form {
+        width: 100%;
+        margin: auto;
+    }
 
-input:focus~.barra::before,
-textarea:focus~.barra::before {
-    width: 100%;
-}
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
 
-.barra {
-    position: relative;
-    display: block;
-    width: 100%;
-}
+    input,
+    textarea {
+        background: none;
+        color: #c6c6c6;
+        font-size: 14px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--secondaryColor);
+        resize: none;
+        font-family: var(--fontPrimary);
+    }
 
-.barra::before {
-    content: '';
-    height: 2px;
-    width: 0%;
-    bottom: 0;
-    position: absolute;
-    background: var(--primaryColor);
-    transition: 0.3s ease all;
-    left: 0%;
-}
+    input:focus,
+    textarea:focus {
+        outline: none;
+        color: rgb(94, 93, 93);
+    }
 
-.button_form {
-    background: var(--primaryColor);
-    display: block;
-    width: 100px;
-    height: 40px;
-    border: none;
-    color: #fff;
-    border-radius: 30px;
-    font-size: 16px;
-    margin: 10px auto;
-    cursor: pointer;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-}
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label {
+        position: absolute;
+        top: -14px;
+        font-size: 16px;
+        color: var(--secondaryColor);
+    }
 
-.button_form:hover {
-    background-color: var(--secondaryColor);
-    color: var(--opcional_color);
-}
+    label {
+        color: var(--colorTextos);
+        font-size: var(--fontSizeClasica);
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
 
-.copy {
-    text-align: center;
-    margin: 10px 0;
-    font-family: var(--fontPrimary);
-    font-size: 14px;
-  
-}
+    input:focus~.barra::before,
+    textarea:focus~.barra::before {
+        width: 100%;
+    }
 
-/* incorporacion de WhatsApp */
+    .barra {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
 
-.float {
-    bottom: 58px;
-    right: 65px;
-    width: 50px;
-    height: 50px;
-} 
+    .barra::before {
+        content: '';
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background: var(--primaryColor);
+        transition: 0.3s ease all;
+        left: 0%;
+    }
+
+    .button_form {
+        background: var(--primaryColor);
+        display: block;
+        width: 100px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        border-radius: 30px;
+        font-size: 16px;
+        margin: 10px auto;
+        cursor: pointer;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .button_form:hover {
+        background-color: var(--secondaryColor);
+        color: var(--opcional_color);
+    }
+
+    .copy {
+        text-align: center;
+        margin: 10px 0;
+        font-family: var(--fontPrimary);
+        font-size: 14px;
+    }
+
+    /* incorporacion de WhatsApp */
+
+    .float {
+        bottom: 58px;
+        right: 65px;
+        width: 50px;
+        height: 50px;
+    }
 
 }
 /* Seccion sobre Nosotros */
