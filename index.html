@@ -9,9 +9,12 @@
   <script src="https://kit.fontawesome.com/2e18c6fdc4.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,700&family=Poppins:wght@400;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="paseos.css">
 </head>
 
 <body>
@@ -85,32 +88,13 @@
     </main>
     <!-- Arranca paseos -->
     <section id="paseos">
-      <h2 id="paseos__title">NUESTROS <span>PASEOS</span></h2>
+      <h2 id="paseos__title">NUESTROS&nbsp<span>PASEOS</span></h2>
       <p id="paseos__text">Conocé lugares que solo llegás <span> en bici :)</span></p>
+  
       <div id="paseos__cards-container">
+  
         <div class="paseos__card">
-          <div class="paseos__card-bg"></div>
-          <div class="paseos__card__top-icons">
-            <div>
-              <img class="paseos__card-icon" src="./assets/icons/reloj.png" alt="" />
-              <span>2:30hs</span>
-            </div>
-            <div>
-              <img class="paseos__card-icon" src="./assets/icons/calendar.png" alt="" />
-              <span>Intensidad moderada</span>
-            </div>
-            <div>
-              <img class="paseos__card-icon" src="./assets/icons/icon-bike.png" alt="" />
-              <span>30Km</span>
-            </div>
-          </div>
-          <img class="paseos__card-img" src="./assets/image/paseos-card-1.png" alt="" />
-          <div class="paseos__card-bottom-bar">
-            <h3 class="paseos__card-name">RECORRIDO NORTE</h3>
-            <a href="#" class="paseos__card-button">inscribirme<a />
-          </div>
-        </div>
-        <div class="paseos__card">
+          <img class="paseos__card" src="./assets/image/cards_paseos/paseoNorte.png" alt="NORTE" />
           <div class="paseos__card-bg"></div>
           <div class="paseos__card__top-icons">
             <div>
@@ -126,37 +110,188 @@
               <span>35Km</span>
             </div>
           </div>
-          <img class="paseos__card-img" src="./assets/image/paseos-card-2.png" alt="" />
           <div class="paseos__card-bottom-bar">
-            <h3 class="paseos__card-name">RECORRIDO SUR</h3>
-            <a href="#" class="paseos__card-button">inscribirme<a />
+            <h3 class="paseos__card-name">RECORRIDO NORTE LARGO</h3>
+            <a href="#" class="paseos__card-button">inscribirme</a>
           </div>
         </div>
+  
+  
         <div class="paseos__card">
+          <img class="paseos__card" src="assets/image/cards_paseos/paseoSur.png" alt="SUR" />
           <div class="paseos__card-bg"></div>
           <div class="paseos__card__top-icons">
             <div>
               <img class="paseos__card-icon" src="./assets/icons/reloj.png" alt="" />
-              <span>2:30hs</span>
+              <span>3hs</span>
             </div>
             <div>
               <img class="paseos__card-icon" src="./assets/icons/calendar.png" alt="" />
-              <span>Intensidad liviana</span>
+              <span>Intensidad moderada</span>
             </div>
             <div>
               <img class="paseos__card-icon" src="./assets/icons/icon-bike.png" alt="" />
-              <span>20Km</span>
+              <span>35Km</span>
             </div>
           </div>
-          <img class="paseos__card-img" src="./assets/image/paseos-card-3.png" alt="" />
           <div class="paseos__card-bottom-bar">
-            <h3 class="paseos__card-name">RECORRIDO HISTÓRICO</h3>
-            <a href="#" class="paseos__card-button">inscribirme<a />
+            <h3 class="paseos__card-name">RECORRIDO SUR LARGO</h3>
+            <a href="#" class="paseos__card-button">inscribirme</a>
+          </div>
+        </div>
+  
+        <div class="paseos__card">
+          <img class="paseos__card" src="./assets/image/cards_paseos/paseLunaLlena.png" alt="LUNA LLENA" />
+          <div class="paseos__card-bg"></div>
+          <div class="paseos__card__top-icons">
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/reloj.png" alt="" />
+              <span>3hs</span>
+            </div>
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/calendar.png" alt="" />
+              <span>Intensidad moderada</span>
+            </div>
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/icon-bike.png" alt="" />
+              <span>35Km</span>
+            </div>
+          </div>
+          <div class="paseos__card-bottom-bar">
+            <h3 class="paseos__card-name">RECORRIDO LUNA LLENA</h3>
+            <a href="#" class="paseos__card-button">inscribirme</a>
+          </div>
+        </div>
+  
+        <div class="paseos__card">
+          <img class="paseos__card" src="./assets/image/cards_paseos/paseo7Lagos.png" alt="LUNA LLENA" />
+          <div class="paseos__card-bg"></div>
+          <div class="paseos__card__top-icons">
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/reloj.png" alt="" />
+              <span>3hs</span>
+            </div>
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/calendar.png" alt="" />
+              <span>Intensidad moderada</span>
+            </div>
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/icon-bike.png" alt="" />
+              <span>35Km</span>
+            </div>
+          </div>
+          <div class="paseos__card-bottom-bar">
+            <h3 class="paseos__card-name">EXPERIENCIA 7LAGOS</h3>
+            <a href="#" class="paseos__card-button">inscribirme</a>
+          </div>
+        </div>
+  
+        <div class="paseos__card">
+          <img class="paseos__card" src="./assets/image/cards_paseos/paseosEspeciales.png" alt="LUNA LLENA" />
+          <div class="paseos__card-bg"></div>
+          <div class="paseos__card__top-icons">
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/reloj.png" alt="" />
+              <span>3hs</span>
+            </div>
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/calendar.png" alt="" />
+              <span>Intensidad moderada</span>
+            </div>
+            <div>
+              <img class="paseos__card-icon" src="./assets/icons/icon-bike.png" alt="" />
+              <span>35Km</span>
+            </div>
+          </div>
+          <div class="paseos__card-bottom-bar">
+            <h3 class="paseos__card-name">EVENTOS ESPECIALES</h3>
+            <a href="#" class="paseos__card-button">inscribirme</a>
           </div>
         </div>
       </div>
     </section>
-  <!-- aca termina paseos -->
+  
+    <!-- seccion preguntas frecuentes -->
+  
+    <section class="paseos">
+      <div class="paseo__text__1">
+        <h2 class="paseos__title">Preguntas&nbsp<span>FRECUENTES</span></h2>
+        <p class="paseos__text">Todo lo que necesitas<span> saber :)</span></p>
+      </div>
+      <br>
+      <div class="paseo__text__1">
+        <p>No te podes perder el Bici Tour de Mar del Plata, una experiencia única en la ciudad.</p>
+        <br>
+        <p>Hacemos recorridos cortos de 2 hs e intensidad liviana y recorridos largos de 3 hs e intensidad moderada.
+          Son hacia el Sur y hacia el Norte. Ambos tienen mucho de barrios, parques, reservas, bicisendas y más.
+          ¡Salimos y volvemos juntos!</p>
+        <br>
+        <p>La experiencia incluye el alquiler de la bicicleta mountain bike R29 + Casco + Refrigerios naturales +
+          Hidratación individual + Seguro + la compañía del guía en todo el recorrido.</p>
+        <br>
+        <p>Encontrá toda la información y consultas en instagram o facebook @bicitarte.mdp o sino por Whats App al
+          2233437450.</p>
+        <br>
+        <p>Bicitarte, una experiencia divertida, diferente y natural para conocer la ciudad.</p>
+        <br>
+        <br>
+      </div>
+  
+      <div class=" paseo__text__1">
+        <h3 class="paseos__title">Recorridos en&nbsp<span>BICICLETA</span></h3>
+        <br>
+        <p>1. Salida y regreso <br><br> ¿Desde dónde salen para emprender los recorridos? ¿Siempre se encuentran en el
+          mismo
+          punto? ¿Tienen alguna dirección para que dejemos asentada?</p>
+        <br>
+        <p>&nbsp Salimos desde Ricardo Gutierrez 589. A 1 cuadra del museo mar y a 2 del mar.
+          ¡Salimos y volvemos juntos!</p>
+        <br>
+  
+        <p>2. Horarios de los recorridos<br><br> ¿Tienen horarios estipulados de salidas para cada recorrido? ¿Horario de
+          incio y de regreso?</p>
+        <br>
+  
+        <p> &nbsp 8 y 17 hs (puede cambiar segun el clima, escribinos!)</p>
+        <br>
+  
+        <p>3. Días de serivicio <br><br>¿Se puede coordinar una salida cualquier día de la semana?</p>
+        <br>
+        <p>&nbsp si! se reprograma o suspende en dia de lluvias
+        </p>
+        <br>
+        <p>4. Promociones <br><br> ¿Ofrecen algún tipo de promoción por grupos de personas? </p>
+        <br>
+        <p>&nbsp 4x3 ! Vienen 4 y solo pagan 3</p>
+        <br>
+        <p>5. Edades <br><br> ¿Hay alguna edad mínima para poder hacer los recorridos? ¿Cuentan con bicicletas para niños?
+        </p>
+        <br>
+        <p> &nbsp Menores de hasta 15 kg pueden venir con padre o madre con sillita y casco sin cargo. Mayores de 15 años
+          hasta 18 años acompañados con un tutor.</p>
+        <br>
+        <br>
+      </div>
+  
+      <div class="paseo__text__1">
+        <h2 class="paseos__title">Alquiler de&nbsp<span>BICICLETA</span></h2>
+        <br>
+        <p>1. Dirección de retiro <br><br>¿Podrías indicarnos la dirección exacta para retirar las bicicletas?</p>
+        <br>
+        <p>&nbsp Ricardo Gutierrez 589. A 1 cuadra del museo mar y a 2 del mar.
+        </p>
+        <br>
+        <p>2. Horarios de entrega y devolución <br><br>¿El alquiler es por cierta cantidad de horas en el día, por ejemplo
+          de 9 a 20 hs? ¿Se pueden alquileres de 24 hs? ¿Pueden alquilar más de 1 día? ¿Hasta qué hora tienen para
+          hacer la devolución?
+        </p>
+        <br>
+        <p>&nbsp A combinar</p>
+        <br>
+      </div>
+    </section>
+
+    <!-- aca termina paseos -->
     <section class="sobrenosotros" id="sobreNosotros">
       <hr class="largo_hr">
       <h2 class="">Sobre nosotros</h3>
@@ -226,6 +361,9 @@
 
     </footer>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
