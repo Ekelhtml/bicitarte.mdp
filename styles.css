@@ -74,6 +74,7 @@
     top: 40px;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     font-family: var(--fontPrimary);
     font-weight: 400;
     /* Aca esta la lentitud de la transision pase 0.7 a 1.2 */
@@ -81,15 +82,18 @@
 }
 
 .logo img{
-    max-width: 4rem;
+    max-width: 8rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
 }
-.contenedor nav .logo{
+/* .contenedor nav .logo{
     font-weight: 900;
     font-style: italic;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+} */
 
 .contenedor nav .tour{
     display: flex;
