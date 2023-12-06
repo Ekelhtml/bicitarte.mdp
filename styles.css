@@ -1,7 +1,7 @@
-/* html {
+html {
     scroll-behavior: smooth;
   }
-   */
+  
 * {
     padding: 0;
     margin: 0;
@@ -42,7 +42,7 @@
 }
 
 .contenedor header .top1{
-    
+
     border-bottom: solid 1px white ;
     display: flex;
     align-items: center;
@@ -195,7 +195,7 @@ main div{
     }
 
     .activar{
-        display:block; 
+        display:block;
     }
     .desactivar{
         display: none;
@@ -364,7 +364,7 @@ main div{
     align-content: space-around;
     gap: 100px;
     top: 210px;
-    
+
 }
 
 
@@ -387,13 +387,13 @@ main div{
 hr {
     width:40px;
     border: solid 2px var(--secondaryColor);
- 
+
 
 }
 
 .hero_titulo{
     text-align: center;
-  
+
     color: var(--quaternary);
     font-size: clamp(1.5rem, 2.9vw, 2rem);
 }
@@ -442,8 +442,8 @@ hr {
         display: flex;
         justify-content: center;
     }
-    
-    
+
+
     .content {
         position: absolute;
         display: inline-block;
@@ -458,10 +458,10 @@ hr {
         align-content: space-around;
         gap: 40px;
         top: 210px;
-        
+
     }
-    
-    
+
+
     .overlay {
         position: absolute;
         top: 0;
@@ -470,28 +470,28 @@ hr {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
     }
-    
+
     .image_logo {
         width: 95%;
         margin: 0 auto;
         font-size: clamp(1.5rem, 3vw, 2.5rem);
     }
-    
-    
-  
-    
+
+
+
+
     .hero_titulo{
         text-align: center;
-      
+
         color: var(--quaternary);
         font-size: clamp(1.5rem, 2.9vw, 2rem);
     }
-    
+
     .button_container {
         text-align: center;
     }
-    
-    
+
+
     .button {
         font-size: var(--fontSizeBase);
         display: inline-block;
@@ -508,7 +508,7 @@ hr {
         -o-border-radius: 40px;
         font-weight: bold;
     }
-    
+
     .button:hover {
         background-color: var(--secondaryColor);
         color: var(--opcional_color);
@@ -598,7 +598,7 @@ hr {
     align-content: space-around;
     gap: 100px;
     top: 210px;
-    
+
 }
 
 
@@ -621,13 +621,13 @@ hr {
 hr {
     width:40px;
     border: solid 2px var(--secondaryColor);
- 
+
 
 }
 
 .hero_titulo{
     text-align: center;
-  
+
     color: var(--quaternary);
     font-size: clamp(1.5rem, 2.9vw, 2rem);
 }
@@ -676,8 +676,8 @@ hr {
         display: flex;
         justify-content: center;
     }
-    
-    
+
+
     .content {
         position: absolute;
         display: inline-block;
@@ -692,10 +692,10 @@ hr {
         align-content: space-around;
         gap: 40px;
         top: 210px;
-        
+
     }
-    
-    
+
+
     .overlay {
         position: absolute;
         top: 0;
@@ -704,28 +704,28 @@ hr {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
     }
-    
+
     .image_logo {
         width: 95%;
         margin: 0 auto;
         font-size: clamp(1.5rem, 3vw, 2.5rem);
     }
-    
-    
-  
-    
+
+
+
+
     .hero_titulo{
         text-align: center;
-      
+
         color: var(--quaternary);
         font-size: clamp(1.5rem, 2.9vw, 2rem);
     }
-    
+
     .button_container {
         text-align: center;
     }
-    
-    
+
+
     .button {
         font-size: var(--fontSizeBase);
         display: inline-block;
@@ -742,7 +742,7 @@ hr {
         -o-border-radius: 40px;
         font-weight: bold;
     }
-    
+
     .button:hover {
         background-color: var(--secondaryColor);
         color: var(--opcional_color);
@@ -949,7 +949,7 @@ textarea:focus~.barra::before {
     .background_footer {
         background-color: var(--opcional_color);
         width: 100%;
-        height: 
+        height:
         auto;
     }
 
@@ -968,7 +968,7 @@ textarea:focus~.barra::before {
 
     .largo_hr {
         width: 700px;
-        
+
     }
 
     .title_footer {
