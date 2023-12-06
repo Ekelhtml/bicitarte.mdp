@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #5038A6;
+    --secondaryColor: #05FF0B;
+    --tertiary: #45407B;
+    --quaternary: #FAFFF8;
+    --colorTextPrimary: #ffffff;
+    --fontPrimary: 'Montserrat', sans-serif;
+    --fontSecondary:
+        /*definir*/
+    ;
+    --opcional_color: #010101;
+    --lineHeightBase: 1.5rem;
+    --fontSizeClasica: 1.2rem;
+    --fontSizeBase: 1.5rem;
+    --fontSizeBaseDos: 1.9rem;
+    --fontsizaBaseTres: 2.1rem;
+    /*Definir el resto segun necesidades, valores debajo solo sonreferenciales*/
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+}
+
+.paseos {
+    background-color: var(--primaryColor);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fontPrimary);
+    padding: 50px;
+}
+
+h2 {
+    font-family: var(--fontPrimary);
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondaryColor);
+    background: var(--primaryColor);
+}
+
+
+
+.paseos__title {
+    margin-bottom: 32px;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.paseos__title span {
+    color: var(--secondaryColor);
+}
+
+.paseos__text {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.paseo__text__1 {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.paseos__text span {
+    color: var(--secondaryColor);
+}
+
+.image_1 {
+    aspect-ratio: 3/4;
+    height: auto;
+    object-fit: contain;
+}
+
+.cont_imgage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.image_2,
+.image_3,
+.image_4 {
+    aspect-ratio: 16/9;
+    width: 80vw;
+    object-fit: cover;
+
+}
+
+.image_2_Lagos,
+.image_3_Lagos,
+.image_4_Lagos {
+    aspect-ratio: 2/3;
+    width: 80vw;
+    object-fit: cover;
+
+}
+
+.btn_1 {
+    padding: 20px;
+    margin-left: 0px;
+    background-color: var(--primaryColor);
+}
+
+.btn-success {
+    background-color: #05FF0B !important;
+}
+
+.btn-success:hover {
+    background-color: #05ff09db !important;
+}
