@@ -144,7 +144,7 @@ main div{
     display: none;
 }
 /* medias querys para mobile */
-@media screen and (max-width: 750px){
+@media screen and (max-width: 768px){
     .principal .tour{
         display: none;
     }
@@ -937,6 +937,7 @@ textarea:focus~.barra::before {
 /* inicio  min-width:768px) -------------------------------------------*/
 
 @media screen and (min-width:768px) {
+
     .background_footer {
         background-color: var(--opcional_color);
         width: 100%;
@@ -1183,5 +1184,10 @@ textarea:focus~.barra::before {
 }
 #videoSobreNosotros{
    margin: 2rem;
-
+}
+@media screen and (max-width:768px){
+    #videoSobreNosotros{
+        width: 400px;
+        height: 290px;
+    }
 }
