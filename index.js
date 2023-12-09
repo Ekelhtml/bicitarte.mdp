@@ -6,8 +6,7 @@ window.addEventListener('scroll', function(){
 
     if (window.scrollY>250){
         console.log(window.scrollY);
-        
-        top1.style.display = 'none';
+        //top1.style.display = 'none';
         principal.style.top = '0';
         principal.style.backgroundColor = "rgba(69, 64, 123,1)" ;
         

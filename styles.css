@@ -42,7 +42,7 @@ html {
 }
 
 .contenedor header .top1{
-
+    height: 3rem;
     border-bottom: solid 1px white ;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ html {
     padding: 10px 15px 10px 0px;
 }
 
-.contenedor header .top1 .contacto p{
+.contenedor header .top1 .contacto p:last-of-type{
     border-left: solid 1px white ;
 }
 .contenedor header .top1 .idiomasRedes .redes p{
@@ -90,7 +90,6 @@ html {
     max-width: 8rem;
     display: flex;
     justify-content: center;
-    padding-bottom: 9px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -153,6 +152,9 @@ main div{
 }
 /* medias querys para mobile */
 @media screen and (max-width: 768px){
+    .principal {
+        height: 3rem;
+    }
     .principal .tour{
         display: none;
     }
