@@ -45,8 +45,6 @@ const toursFAQ = document.querySelector('#tours')
 const rentFAQ = document.querySelector('#rent')
 
 const toogleAnswer = (e) => {
-    console.log('toggle')
-    console.log(e.target.nextElementSibling)
     e.target.nextElementSibling.classList.toggle('open')
 }
 
